@@ -1,0 +1,276 @@
+* {
+    margin: 0pt;
+    padding: 0pt;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1.15fr 2.15fr;
+}
+
+.container .left_side {
+    position: relative;
+    background: darkslateblue;
+    padding: 40px;
+}
+
+.profiletext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.profiletext .imgtx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imgtx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profiletext h2 {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profiletext h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactinfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactinfo ul {
+    position: relative;
+}
+
+.contactinfo ul li {
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(177, 209, 235);
+}
+
+.contactinfo ul li span {
+    color: white;
+    font-weight: 300px;
+}
+
+.contactinfo ul li span a {
+    color: white;
+    font-weight: 300px;
+}
+
+.contactinfo.Education li {
+    margin-bottom: 15px;
+}
+
+.contactinfo.Education h5:nth-child(2) {
+    color: rgb(228, 222, 222);
+    font-weight: 400;
+}
+
+.contactinfo.Education h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.contactinfo.Education h6 {
+    color: rgb(219, 219, 219);
+    font-weight: 300;
+}
+
+.contactinfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(252, 245, 245);
+    display: block;
+    margin-top: 5px;
+}
+
+.contactinfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(52, 52, 231);
+}
+
+.container .right_side {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title1 {
+    color: rgb(59, 59, 116);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgb(34, 34, 36);
+}
+
+
+/*
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}*/
+
+.about .box .company_year {
+    min-width: 150px
+}
+
+.about .box .company_year h5 {
+    position: relative;
+    text-transform: uppercase;
+    color: rgb(51, 14, 97);
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 150%;
+}
+
+.about .box .text h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(17, 58, 72);
+    font-size: 16px;
+}
+
+.about .box .text h6 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(11, 26, 31);
+    font-size: 13px;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(51, 185, 230);
+    font-size: 16px;
+}
+
+.about .box .text p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about .box .text ul {
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.projects .text h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(51, 185, 230);
+    font-size: 16px;
+}
+
+.projects .text ul li {
+    margin-bottom: 8px;
+}
+
+.Academic_project .text h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(51, 185, 230);
+    font-size: 16px;
+}
+
+.Academic_project .text p {
+    margin-bottom: 8px;
+}
+
+.Academic_project .text ul {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    margin-bottom: 8px;
+}
+
+.Academic_project .text ul li {
+    margin-bottom: 8px;
+}
+
+.tools .text ul {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+}
+
+.tools .text ul li {
+    margin-bottom: 8px;
+}
+
+.courses .text ul {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+}
+
+.courses .text ul li {
+    margin-bottom: 9px;
+}
